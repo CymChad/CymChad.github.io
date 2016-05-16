@@ -1,10 +1,241 @@
 <!DOCTYPE html>
-<html>
-<script>
- window.location.href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper";
-</script>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Bootstrap 101 Template</title>
 
-<body>
-</body>
+    
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="cym.css"/>
+  </head>
+  <body style="margin:0 auto">
+    <div id="h">
+	   <h1 id="h1"><b>BaseRecyclerViewAdapterHelper</b></h1>
+	   <p id="p1">Powerful and flexible RecyclerAdapter Please feel free to use this.(Love can be a Star)</p>
+       <div id="b1"><a href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper"><button type="button" class="btn btn-primary btn-lg " >View on GitHub</button></a></div>
+    </div>
+	
+	<h2 class="h2" id="h2">BaseRecyclerViewAdapterHelper<a href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper/blob/master/README-cn.md">(中文版文档)</a></h2>
+	<p>Powerful and flexible RecyclerAdapter Please feel free to use this.(Love can be a Star)</p>
+	<ul><h2 class="h2">Features<a href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper/raw/master/demo_res/demo.apk">(download apk)</a></h2>
+	   <li>Reduce lot of code.easily create RecyclerAdapter</li>
+	   <li>add item click and add item long click</li>
+	   <li>easily add RecyclerAdapter animations</li>
+	   <li>add HeadView and add FooterView</li>
+	   <li>add The drop-down refresh, load more</li>
+	   <li>set custom loading view</li>
+	   <li>easily create section headers</li>
+	   <li>custom item view type</li>
+	   <li>add setEmptyView methods</li>
+	   <li>add item chlid click</li>
+	</ul>
+	<img src="https://github.com/CymChad/BaseRecyclerViewAdapterHelper/raw/master/demo_resdemo.gif"/>
+    <div class="d">
+	   <h2 class="h2">Get it</h2>
+	   <p>Add it in your root build.gradle at the end of repositories:</p>
+	   <p><pre>
+	allprojects {
+        repositories {
+            ...
+            maven { url "https://jitpack.io" }
+        }
+    }
 
+
+Add the dependency
+    dependencies {
+            compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v1.6.7'
+    }
+
+       </pre></p>
+	</div>
+	<div class="d">
+    <h2 class="h2">Use it create RecyclerAdapter</h2>
+	<img src="https://camo.githubusercontent.com/149ee5dcbe896d7ef69f9b75873494c3937e4230/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f3937323335322d353462643137643336383061346366392e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430"/>
+	<p><pre>
+	public class QuickAdapter extends BaseQuickAdapter<Status> {
+    public QuickAdapter(Context context) {
+        super(context, R.layout.tweet, DataServer.getSampleData());
+    }
+
+    @Override
+    protected void convert(BaseViewHolder helper, Status item) {
+        helper.setText(R.id.tweetName, item.getUserName())
+                .setText(R.id.tweetText, item.getText())
+                .setText(R.id.tweetDate, item.getCreatedAt())
+                .setImageUrl(R.id.tweetAvatar, item.getUserAvatar())
+                .setVisible(R.id.tweetRT, item.isRetweet())
+                .linkify(R.id.tweetText);
+    }
+}
+    </pre></p>
+	</div>
+	<div class="d">
+	<h2 class="h2">Use it item click</h2>
+    <p><pre>
+	mQuickAdapter.setOnRecyclerViewItemClickListener(new BaseQuickAdapter.OnRecyclerViewItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                //..
+            }
+        });
+    </pre></p>
+	</div>
+	<div class="d">
+	<h2 class="h2">Use it add adaptar Animation</h2>
+    <p><pre>
+	// Turn animation
+quickAdapter.openLoadAnimation();
+    </pre></p>
+	<p>or</p>
+	<p><pre>// Turn animation and set animate
+quickAdapter.openLoadAnimation(BaseQuickAdapter.ALPHAIN);
+    </pre></p>
+	<p>or</p>
+	<p><pre>
+	// Turn animation and set custom animate
+quickAdapter.openLoadAnimation(new BaseAnimation() {
+                            @Override
+                            public Animator[] getAnimators(View view) {
+                                return new Animator[]{
+                                        ObjectAnimator.ofFloat(view, "scaleY", 1, 1.1f, 1),
+                                        ObjectAnimator.ofFloat(view, "scaleX", 1, 1.1f, 1)
+                                };
+                            }
+                        });
+    </pre></p>
+	</div>
+	<div class="d">
+	<h2 class="h2">Use it custom item view type</h2>
+	<p><pre>
+	public class MultipleItemQuickAdapter extends BaseMultiItemQuickAdapter<MultipleItem> {
+
+    public MultipleItemQuickAdapter(Context context, List data) {
+        super(context, data);
+        addItmeType(MultipleItem.TEXT, R.layout.text_view);
+        addItmeType(MultipleItem.IMG, R.layout.image_view);
+    }
+
+    @Override
+    protected void convert(BaseViewHolder helper, MultipleItem item) {
+        switch (helper.getItemViewType()) {
+            case MultipleItem.TEXT:
+                helper.setImageUrl(R.id.tv, item.getContent());
+                break;
+            case MultipleItem.IMG:
+                helper.setImageUrl(R.id.iv, item.getContent());
+                break;
+        }
+    }
+
+}
+    </pre></p>
+	</div>
+	<div class="d">
+	<h2 class="h2">Use it add header and footer</h2>
+	<p><pre>
+	mQuickAdapter.addHeaderView(getView());
+mQuickAdapter.addFooterView(getView());
+    </pre></p>
+	</div>
+	<div class="d">
+	<h2 class="h2">Use it load more</h2>
+	<p>setOnLoadMoreListener</p>
+	<p><pre>
+	mQuickAdapter.setOnLoadMoreListener(this);
+    </pre></p>
+	<p>Override onLoadMoreRequested()</p>
+	<p><pre>
+	@Override
+public void onLoadMoreRequested() {
+        mRecyclerView.post(new Runnable() {
+        @Override
+        public void run() {
+        if (mCurrentCounter >= TOTAL_COUNTER) {
+                    mQuickAdapter.notifyDataChangedAfterLoadMore(false);
+                }
+        } else {
+                    mQuickAdapter.notifyDataChangedAfterLoadMore(DataServer.getSampleData(PAGE_SIZE),true);
+                    mCurrentCounter = mQuickAdapter.getItemCount();
+        }});
+    }
+    </pre></p>
+	</div>
+	<div class="d">
+	<h2 class="h2">Set custom loading view</h2>
+	<p><pre>
+	mQuickAdapter.setLoadingView(customView);
+    </pre></p>
+	</div>
+	<div class="d">
+	<h2 class="h2">Use it create section headers</h2>
+	<p><pre>
+	public class SectionAdapter extends BaseSectionQuickAdapter<MySection> {
+     public SectionAdapter(Context context, int layoutResId, int sectionHeadResId, List data) {
+        super(context, layoutResId, sectionHeadResId, data);
+    }
+    @Override
+    protected void convert(BaseViewHolder helper, MySection item) {
+        helper.setImageUrl(R.id.iv, (String) item.t);
+    }
+    @Override
+    protected void convertHead(BaseViewHolder helper,final MySection item) {
+        helper.setText(R.id.header, item.header);
+        if(!item.isMroe)helper.setVisible(R.id.more,false);
+        else
+        helper.setOnClickListener(R.id.more, new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context,item.header+"more..",Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+    </pre></p>
+	</div>
+	<div class="d">
+	<h2 class="h2">Use it setEmptyView</h2>
+	<p><pre>
+	mQuickAdapter.setEmptyView(getView());
+    </pre></p>
+	</div>
+	<div class="d">
+	<h2 class="h2">Use it item chlid click</h2>
+	<p>Adapter</p>
+	<p><pre>
+	protected void convert(BaseViewHolder helper, Status item) {
+    helper.setOnClickListener(R.id.tweetAvatar, new OnItemChildClickListener())
+      .setOnClickListener(R.id.tweetName, new OnItemChildClickListener());
+      }
+	</pre></p>
+	<p>Activity</p>
+	<p><pre>
+	mQuickAdapter.setOnRecyclerViewItemChildClickListener(new BaseQuickAdapter.OnRecyclerViewItemChildClickListener() {
+            @Override
+            public void onItemChildClick(BaseQuickAdapter adapter, View view, int position) {
+                String content = null;
+                Status status = (Status) adapter.getItem(position);
+                switch (view.getId()) {
+                    case R.id.tweetAvatar:
+                        content = "img:" + status.getUserAvatar();
+                        break;
+                    case R.id.tweetName:
+                        content = "name:" + status.getUserName();
+                        break;
+                }
+                Toast.makeText(AnimationUseActivity.this, content, Toast.LENGTH_LONG).show();
+            }
+        });
+    </pre></p>
+	</div>
+	<h2>Thanks</h2>
+	<a href="https://github.com/JoanZapata/base-adapter-helper"><p id="footer">JoanZapata / base-adapter-helper</p></a>
+
+
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </body>
 </html>

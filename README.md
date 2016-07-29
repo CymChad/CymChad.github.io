@@ -1,7 +1,7 @@
 #RecyclerView
 ##原理分析
 [RecyclerView剖析](http://blog.csdn.net/qq_23012315/article/details/50807224)  
-[RecyclerView源码分析](http://mouxuejie.com/blog/2016-03-06/recyclerview-analysis/)
+[RecyclerView源码分析](http://mouxuejie.com/blog/2016-03-06/recyclerview-analysis/)  
 [读源码-用设计模式解析RecyclerView](http://www.jianshu.com/p/c82cebc4e798)
 ##扩展篇
 [RecyclerView学习(一)----初步认知](http://blog.csdn.net/tyk0910/article/details/51329749)  

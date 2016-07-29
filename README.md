@@ -1,5 +1,6 @@
 #RecyclerView
 >所有关于RecyclerView的文章，持续更新欢迎提交pr，推荐star。
+
 ##原理分析
 [RecyclerView剖析](http://blog.csdn.net/qq_23012315/article/details/50807224)  
 [RecyclerView源码分析](http://mouxuejie.com/blog/2016-03-06/recyclerview-analysis/)  

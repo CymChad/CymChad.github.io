@@ -4,6 +4,8 @@
 [RecyclerView源码分析](http://mouxuejie.com/blog/2016-03-06/recyclerview-analysis/)  
 [读源码-用设计模式解析RecyclerView](http://www.jianshu.com/p/c82cebc4e798)
 ##扩展篇
+[RecyclerView再封装](http://www.jianshu.com/p/a5dd9c0735f2)  
+[封装那些事-RecyclerView封装实践](http://www.jianshu.com/p/a6f158d1a9c9)  
 [RecyclerView学习(一)----初步认知](http://blog.csdn.net/tyk0910/article/details/51329749)  
 [RecyclerView学习(二)----高仿网易新闻栏目动画效果](http://blog.csdn.net/tyk0910/article/details/51460808)  
 [RecyclerView学习(三)----高仿知乎的侧滑删除](http://blog.csdn.net/tyk0910/article/details/51669205)  

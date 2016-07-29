@@ -3,6 +3,7 @@
 [RecyclerView剖析](http://blog.csdn.net/qq_23012315/article/details/50807224)  
 [RecyclerView源码分析](http://mouxuejie.com/blog/2016-03-06/recyclerview-analysis/)  
 [读源码-用设计模式解析RecyclerView](http://www.jianshu.com/p/c82cebc4e798)
+[深入浅出RecyclerView](http://kymjs.com/code/2016/07/10/01)
 ##扩展篇
 [RecyclerView再封装](http://www.jianshu.com/p/a5dd9c0735f2)  
 [封装那些事-RecyclerView封装实践](http://www.jianshu.com/p/a6f158d1a9c9)  

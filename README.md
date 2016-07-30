@@ -1,6 +1,7 @@
 #RecyclerView优秀文集
 >收集RecyclerView优秀文章，持续更新欢迎提交pr，推荐star。
 ##入门篇
+[还在用ListView?](http://www.jianshu.com/p/a92955be0a3e)
 [RecyclerView使用介绍](http://www.jianshu.com/p/12ec590f6c76)  
 [深入浅出RecyclerView](http://kymjs.com/code/2016/07/10/01)
 ##原理分析
@@ -16,6 +17,7 @@
 [RecyclerView无法添加onItemClickListener最佳的高效解决方案](http://blog.csdn.net/liaoinstan/article/details/51200600)  
 [ItemTouchHelper 使用RecyclerView打造可拖拽的GridView](http://blog.csdn.net/liaoinstan/article/details/51200618)  
 [RecyclerView 实现快速滑动](http://blog.csdn.net/u014099894/article/details/51855129)  
+[RecyclerView 顶部悬浮实现](http://www.jianshu.com/p/c596f2e6f587)  
 ##[BRVAH](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)  
 [BRVAH优化篇](http://www.jianshu.com/p/411ab861034f)  
 [BRVAH动画篇](http://www.jianshu.com/p/fa3f97c19263)  

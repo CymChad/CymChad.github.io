@@ -49,3 +49,5 @@ Be there  22:45:21
 Titanium  16:13:17  
 [Matrix原理](https://github.com/GcsSloop/AndroidNote/blob/master/CustomView/Advance/%5B09%5DMatrix_Basic.md#about)
 
+Damon   16:47:40  
+[Android插件化原理解析](http://weishu.me/2016/01/28/understand-plugin-framework-overview/)

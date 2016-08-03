@@ -1,5 +1,6 @@
 #[BRVAH](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)分享吧
 分享成员来自[BRVAH](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)组织，这里是用于分享好的链接，供大家学习，加油吧，小伙伴~！
+**[目前分享成员](https://github.com/CymChad/CymChad.github.io/blob/master/Member.md)**
 ##2016/8/1
 尤宇 °  19:06:38  
 [UI实时预览最佳实践](http://mp.weixin.qq.com/s?__biz=MzA5NTEzNTU4MA==&mid=2649171149&idx=1&sn=9b760760b7788a3bd71407f35ed9b367&scene=23&srcid=0730E7d7P5qPUVSFSMCmbOpl#rd)

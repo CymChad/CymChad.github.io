@@ -12,7 +12,7 @@ Mr Smile  20:26:22
 [一步步教你写StepView](http://share.weiyun.com/500c944623e293a5ef61b57ea7d3371c)
 
 C y m  20:28:47  
-[Android Studio相见恨晚的操作锦集](http://www.jianshu.com/p/bc8f6bfe12c6?utm_campaign=haruki&utm_content=note&utm_medium=reader_share&utm_source=qq)
+[Android Studio相见恨晚的操作锦集](http://www.jianshu.com/p/bc8f6bfe12c6?utm_campaign=haruki&utm_content=note&utm_medium=reader_share&utm_source=qq)  
 [这3个职场底层逻辑让你更值钱](http://note.youdao.com/share/?id=ea954709f28d112fd1aae175cf9bfd59&type=note)
 
 昆明-淡漠  20:33:12  

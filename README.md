@@ -1,5 +1,5 @@
 #RecyclerView优秀文集
->收集RecyclerView优秀文章，持续更新欢迎提交pr，推荐star。
+>收集RecyclerView优秀文章，持续更新欢迎提交pr，推荐star。[BRVAH分享吧](https://github.com/CymChad/CymChad.github.io/blob/master/BRVAH.md)
 ##入门篇
 [还在用ListView?](http://www.jianshu.com/p/a92955be0a3e)  
 [RecyclerView使用介绍](http://www.jianshu.com/p/12ec590f6c76)  

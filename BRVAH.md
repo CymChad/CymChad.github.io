@@ -51,3 +51,6 @@ Titanium  16:13:17
 
 Damon   16:47:40  
 [Android插件化原理解析](http://weishu.me/2016/01/28/understand-plugin-framework-overview/)
+
+Ziv  16:58:47
+[图解Android事件分发机制](http://www.jianshu.com/p/e99b5e8bd67b)

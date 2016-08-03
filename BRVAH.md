@@ -45,3 +45,6 @@ Mr Smile  17:55:00
 Be there  22:45:21  
 [让你的app提升一个档次－Android酷炫动画](http://www.jianshu.com/p/356619fe64d5?utm_campaign=haruki&utm_content=note&utm_medium=reader_share&utm_source=qq)
 
+Titanium  16:13:17  
+[Matrix原理](https://github.com/GcsSloop/AndroidNote/blob/master/CustomView/Advance/%5B09%5DMatrix_Basic.md#about)
+

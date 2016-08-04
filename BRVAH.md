@@ -81,3 +81,7 @@ C y m  08:12:32
 
 一叶飘舟  10:14:35   
 [ Android 初识Retrofit](http://blog.csdn.net/jdsjlzx/article/details/52015347)
+
+Ziv  10:16:09  
+[Android右滑退出+沉浸式(透明)状态栏](http://www.jianshu.com/p/7dcfd243b1df)
+

@@ -60,3 +60,18 @@ Be there  17:56:58
 
 C y m  17:58:11  
 [基于BRVAH做的固定头部扩展](https://github.com/oubowu/PinnedSectionItemDecoration)
+
+尤宇 °  07:54:26
+[一个很棒的 Android APP框架](http://mp.weixin.qq.com/s?__biz=MzI0MjE3OTYwMg==&mid=2649547726&idx=1&sn=18b43f3a399652f9acbb7ca2b8c1d687&scene=23&srcid=08043i9edVseblEHLPMl0iFr#rd)
+
+C y m  08:04:41
+[庄表伟《开源思索集》上线](http://www.jianshu.com/p/e5c5af1e45dc?utm_campaign=haruki&utm_content=note&utm_medium=reader_share&utm_source=qq)
+
+C y m  08:08:07
+[这样的笔记术，让你的笔记可用性从0到100](http://www.jianshu.com/p/ada69de84aac?utm_campaign=haruki&utm_content=note&utm_medium=reader_share&utm_source=qq)
+
+C y m  08:09:04
+[你连时间都不会管理，你怎么可能做斜杠青年](http://www.jianshu.com/p/fb0506fd021c?utm_campaign=haruki&utm_content=note&utm_medium=reader_share&utm_source=qq)
+
+C y m  08:12:32 
+[VOL.1392](http://m.wufazhuce.com/one/1417)

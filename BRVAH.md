@@ -75,3 +75,9 @@ C y m  08:09:04
 
 C y m  08:12:32   
 [VOL.1392](http://m.wufazhuce.com/one/1417)
+
+一叶飘舟  10:13:40  
+[Retrofit2.0公共参数（固定参数）](http://blog.csdn.net/jdsjlzx/article/details/52063950)
+
+一叶飘舟  10:14:35   
+[ Android 初识Retrofit](http://blog.csdn.net/jdsjlzx/article/details/52015347)

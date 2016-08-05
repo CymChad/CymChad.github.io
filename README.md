@@ -24,5 +24,6 @@
 [BRVAH多布局（上）](http://www.jianshu.com/p/9d75c22f0964)  
 [BRVAH多布局（下）](http://www.jianshu.com/p/cf29d4e45536)  
 [BRVAH分组篇](http://www.jianshu.com/p/87a49f732724)  
---
-[查看更多BRVAH分享圈链接](https://github.com/CymChad/CymChad.github.io/blob/master/BRVAH.md)
+
+
+[查看更多BRVAH分享圈链接](https://github.com/CymChad/BRVAHST)

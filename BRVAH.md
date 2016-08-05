@@ -86,3 +86,31 @@ C y m  08:12:32
 Ziv  10:16:09  
 [Android右滑退出+沉浸式(透明)状态栏](http://www.jianshu.com/p/7dcfd243b1df)
 
+Mr Smile  20:34:42  
+[Android 开发实战经验总结](http://www.jianshu.com/p/4f152bc8f4f3?utm_campaign=haruki&utm_content=note&utm_medium=reader_share&utm_source=qq)
+
+Mr Smile  20:39:36  
+[我是如何自学Android](http://www.jianshu.com/p/874ff12a4c01?utm_campaign=haruki&utm_content=note&utm_medium=reader_share&utm_source=qq)
+
+##2016/8/5
+吻中求胜  00:26:38  
+[Retrofit学习笔记](http://www.jianshu.com/p/93e5ac364227?utm_campaign=haruki&utm_content=note&utm_medium=reader_share&utm_source=qq)
+
+C y m  08:00:5  
+[扔掉90%家中物，高富帅却成人生大赢家](http://mp.weixin.qq.com/s?__biz=MzI4MjE3OTIzOA==&mid=2651124164&idx=1&sn=390fd3a247213cdcf74202470315b394&scene=4#wechat_redirect)
+
+C y m  08:08:16  
+[我有10个不成熟的小建议](http://mp.weixin.qq.com/s?__biz=MzAwNDIyMTE3Ng==&mid=2651301345&idx=1&sn=6cece91de1ed129bd9487b22875bfe91&scene=0#wechat_redirect)
+
+C y m  08:20:32  
+[游戏中学会撸代码：这些编程学习网站不容错过](http://mp.weixin.qq.com/s?__biz=MjM5OTM0MzIwMQ==&mid=2652547013&idx=3&sn=afa9b03fc43456fd2ef01cbae91eb1e6&scene=0#wechat_redirect)
+
+尤宇 °  08:24:43  
+[游戏是怎么赚钱的 - 科普篇](http://mp.weixin.qq.com/s?__biz=MzI0MjA1Mjg2Ng==&mid=401577843&idx=1&sn=3ac778e79d50c8a3a142362c0f243da8&scene=23&srcid=08050ucylUIV6KNzR5OXLrVl#rd)
+
+Ziv  09:44:12  
+[使用AccessibilityService进行APK自动安装](http://url.cn/2FnDd37)
+
+
+
+

@@ -3,7 +3,8 @@
 ##入门篇
 [还在用ListView?](http://www.jianshu.com/p/a92955be0a3e)  
 [RecyclerView使用介绍](http://www.jianshu.com/p/12ec590f6c76)  
-[深入浅出RecyclerView](http://kymjs.com/code/2016/07/10/01)
+[深入浅出RecyclerView](http://kymjs.com/code/2016/07/10/01)  
+[RecyclerView 和 ListView 使用对比分析](http://www.jianshu.com/p/f592f3715ae2)
 ##原理分析
 [RecyclerView剖析](http://blog.csdn.net/qq_23012315/article/details/50807224)  
 [RecyclerView源码分析](http://mouxuejie.com/blog/2016-03-06/recyclerview-analysis/)  

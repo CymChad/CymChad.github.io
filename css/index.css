@@ -1,0 +1,504 @@
+.content {
+  width: 99%;
+  min-width: 800px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  font-family: "Source-Han-Ligh56f0128db16029", 'Microsoft Yahei', sans-serif;
+  margin: 0;
+  width: 100%;
+}
+p {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a.underline {
+  text-decoration: underline;
+}
+.no-ie {
+  background-color: #ffffff;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+header {
+  height: 86px;
+  background-color: #1b1b1b;
+  color: #ffffff;
+}
+header .content {
+  height: 86px;
+  line-height: 86px;
+}
+header .content .header-logo {
+  cursor: pointer;
+  height: 86px;
+  float: left;
+}
+header .content img {
+  display: block;
+  float: left;
+}
+header .content #logoIcon {
+  margin-top: 20px;
+}
+header .content #brvahText {
+  height: 24px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+header .content #githubLogo {
+  float: right;
+  margin-top: 25px;
+}
+header .content #changeLanguage {
+  float: right;
+  margin-right: 10px;
+  width: 140px;
+  height: 86px;
+  line-height: 86px;
+  cursor: pointer;
+}
+header .content #changeLanguage .triangle {
+  display: inline-block;
+  position: relative;
+  left: 8px;
+}
+header .content #changeLanguage:hover,
+header .content #changeLanguage.open {
+  background-color: #181818;
+}
+header .content #changeLanguage span {
+  margin-left: 15px;
+  font-size: 15px;
+}
+header .content ul.tab {
+  display: block;
+  vertical-align: middle;
+  margin: -4px auto 0 auto;
+  padding: 0;
+  height: 86px;
+  width: 570px;
+}
+header .content ul.tab li {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 110px;
+  height: 100%;
+  cursor: pointer;
+}
+header .content ul.tab li a {
+  color: #818181;
+  width: 100%;
+  line-height: 86px;
+  display: inline-block;
+}
+header .content ul.tab li.active a {
+  color: #ffffff;
+}
+header .content ul.tab li:hover {
+  background-color: #111;
+}
+.section-1 {
+  background: url(../pic/section1-bg.png) no-repeat center center;
+  width: 100%;
+  height: 510px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.section-1 .content {
+  margin: 0 auto;
+  color: #bbb;
+  font-weight: lighter;
+  padding-top: 90px;
+}
+.section-1 .content span {
+  color: #fff;
+}
+.section-1 .content .gradient {
+  color: transparent;
+  background: -webkit-linear-gradient(left, #38dca1, #279995);
+  background: -moz-linear-gradient(left, #38dca1, #279995);
+  background: linear-gradient(to right, #38dca1, #279995);
+  -webkit-background-clip: text;
+  display: inline-block;
+}
+.section-1 .content .title {
+  font-size: 16px;
+}
+.section-1 .content .title .gradient {
+  color: transparent;
+  font-size: 42px;
+  letter-spacing: 2px;
+}
+.section-1 .content .subtitle {
+  margin-top: 32px;
+}
+.section-1 .content .subtitle .gradient {
+  font-size: 20px;
+}
+.section-1 .content .part {
+  font-size: 16px;
+  margin: 42px 0;
+}
+.section-1 .content .part a {
+  text-decoration: underline;
+}
+.section-2 .top-layer {
+  background-color: #1ebf60;
+  height: 230px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.section-2 .section-title {
+  margin: 0;
+  padding: 50px 0;
+  color: #ffffff;
+}
+.section-2 .section-title:after {
+  background: url(../pic/dot-white.png);
+}
+.section-2 .row {
+  height: 450px;
+  position: relative;
+}
+.section-2 .introduce {
+  background-color: #ffffff;
+  color: #222;
+  width: 25%;
+  height: 420px;
+  padding: 30px 70px 0 30px;
+  margin-right: 30px;
+  box-shadow: 0 0 8px #ddd;
+  position: absolute;
+}
+.section-2 .introduce p {
+  margin: 20px 0;
+}
+.section-2 .introduce .title div {
+  width: 120px;
+  display: inline-block;
+}
+.section-2 .introduce .introduction-content {
+  height: 250px;
+}
+.section-2 .introduce #introductionTitle {
+  color: #666;
+}
+.section-2 .introduce #introductionTitleCN {
+  color: #1ebf60;
+  font-weight: bold;
+}
+.section-2 .introduce #introductionSubtitle {
+  color: #cdcdcd;
+}
+.section-2 .what-can-do {
+  background: url(../pic/section2-bg.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 450px;
+  color: #ffffff;
+  position: absolute;
+  width: 64%;
+  right: 0;
+}
+.section-2 .what-can-do #transparentLogo {
+  position: absolute;
+  left: 28px;
+  top: 32px;
+}
+.section-2 .what-can-do .title {
+  width: 40%;
+  float: left;
+  position: relative;
+  left: 6%;
+  top: 32px;
+}
+.section-2 .what-can-do .title #whatCanDo {
+  font-size: 18px;
+}
+.section-2 .what-can-do .title #whatCanDo::first-letter {
+  color: #1ebf60;
+  font-size: 24px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+.section-2 .what-can-do .title #subtitleWhatCanDo {
+  color: #aaa;
+}
+.section-2 .what-can-do .more {
+  float: right;
+  color: #1ebf60;
+  position: relative;
+  right: 25px;
+  top: 40px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.section-2 .what-can-do .functions {
+  clear: both;
+  margin: 140px 5% 0 5%;
+}
+.section-2 .what-can-do .functions .grid-row {
+  display: flex;
+}
+.section-2 .what-can-do .functions .cell {
+  background-color: rgba(190, 190, 190, 0.4);
+  height: 55px;
+  line-height: 55px;
+  border-radius: 30px;
+  width: 150px;
+  color: #ffffff;
+  text-align: center;
+  display: inline-block;
+  flex: 1;
+  margin: 10px 2%;
+  z-index: 2;
+  cursor: pointer;
+}
+.section-2 .what-can-do .functions .cell:hover {
+  background-color: rgba(190, 190, 190, 0.8);
+}
+.section-2 .honor {
+  height: 200px;
+  margin-top: 40px;
+}
+.section-2 .honor .honor-develop {
+  background-color: #27b3f3;
+}
+.section-2 .honor .honor-star {
+  background-color: #32d675;
+  left: 34%;
+}
+.section-2 .honor .honor-member {
+  background-color: #fd9854;
+}
+.section-2 .honor > a {
+  color: #ffffff;
+  box-shadow: 0 0 6px #999;
+  display: block;
+}
+.section-2 .honor > a img {
+  float: right;
+  position: relative;
+  right: 25px;
+  top: 36px;
+}
+.section-2 .honor > a div {
+  margin-left: 30px;
+}
+.section-2 .honor > a div:nth-child(2) {
+  width: 68%;
+  height: 50%;
+  margin-top: 36px;
+}
+.section-4 #contentAbout {
+  background-image: url(../pic/section4-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 560px;
+}
+.section-4 .center {
+  margin: 0 auto;
+  width: 580px;
+  position: relative;
+  top: 125px;
+}
+.section-4 .center > div {
+  margin: 0 auto;
+  text-align: center;
+}
+.section-4 .center .circle {
+  border-radius: 90px;
+  width: 180px;
+  height: 180px;
+  line-height: 180px;
+  background-color: rgba(21, 226, 105, 0.3);
+  font-size: 40px;
+  color: #e8e8e8;
+}
+.section-4 .center .text {
+  margin-top: 40px;
+  font-size: 16px;
+  color: #cfcfcf;
+}
+.section-5 .text {
+  margin: 20px 0px;
+  font-size: 16px;
+  color: #666;
+}
+.section-5 .text strong {
+  color: #000;
+}
+.section-5 #joinText4 {
+  margin: 36px 0;
+}
+.section-5 .row-three {
+  height: 442px;
+}
+.section-5 .grid {
+  background: url(../pic/section5-1.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: 0 0 3px #999;
+  height: 442px;
+  width: 30%;
+  text-align: center;
+}
+.section-5 .grid img {
+  width: 92px;
+  height: 98px;
+  margin-top: 60px;
+}
+.section-5 .grid .text,
+.section-5 .grid a {
+  line-height: 1.6;
+  margin-top: 48px;
+  color: #eee;
+}
+.section-5 .grid a {
+  text-decoration: underline;
+}
+.section-5 .grid:hover {
+  box-shadow: 0 0 8px #000;
+}
+.section-5 #joinGrid1 {
+  background-image: url('../pic/section5-1.png');
+}
+.section-5 #joinGrid2 {
+  background-image: url('../pic/section5-2.png');
+}
+.section-5 #joinGrid3 {
+  background-image: url('../pic/section5-3.png');
+}
+.section-5 img {
+  width: 100%;
+}
+footer {
+  background-color: #343434;
+  height: 95px;
+}
+footer #footer {
+  line-height: 95px;
+  vertical-align: middle;
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.6;
+}
+.section-title {
+  margin: 50px 0;
+  color: #111;
+  font-size: 34px;
+}
+.section-title:after {
+  content: "";
+  background: url("../pic/dot-black.png");
+  display: inline-block;
+  width: 26px;
+  height: 15px;
+  position: relative;
+  top: -6px;
+  left: 12px;
+}
+.row-three {
+  position: relative;
+}
+.row-three > div,
+.row-three > a {
+  position: absolute;
+  display: block;
+  width: 32%;
+  height: 100%;
+}
+.row-three > div:first-child,
+.row-three > a:first-child {
+  left: 0;
+}
+.row-three > div:last-child,
+.row-three > a:last-child {
+  right: 0;
+}
+.row-three > div:nth-child(2),
+.row-three > a:nth-child(2) {
+  left: 35%;
+}
+.downlist {
+  margin: -1px 0 0 0;
+  padding-left: 0;
+  line-height: 1;
+  font-size: 15px;
+  display: none;
+}
+.downlist > li,
+.downlist > div {
+  width: 100%;
+  height: 45px;
+  line-height: 32px;
+  background-color: #000000;
+  color: #ffffff;
+  float: left;
+  text-align: left;
+  vertical-align: middle;
+  cursor: pointer;
+  list-style-type: none;
+  opacity: 0.6;
+}
+.downlist > li.active a,
+.downlist > div.active a {
+  color: #1ebf60;
+}
+.downlist > li a,
+.downlist > div a {
+  color: #ffffff;
+  margin-left: 15px;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 8px solid #ffffff;
+  border-bottom: 0;
+}
+.triangle.reverse {
+  border-top: 0;
+  border-bottom: 8px solid #ffffff;
+}
+.md-button {
+  line-height: 40px;
+  height: 40px;
+  width: 120px;
+  color: #ffffff;
+  background-color: #1ebf60;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Arial;
+  border: 0px solid #1ebf60;
+  box-shadow: inset 0px 0px 0px 0px #ffffff;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.md-button:hover {
+  background-color: #1c9439;
+}

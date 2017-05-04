@@ -1,6 +1,9 @@
-#RecyclerView优秀文集
->收集RecyclerView优秀文章，持续更新欢迎提交pr，推荐star。
-##入门篇
+# RecyclerView优秀文集
+> 收集RecyclerView优秀文章，持续更新欢迎提交pr，推荐star。
+
+##关注（微信公众号：码个蛋），每天更新优质文章：Android、职场干货，不定期大神语音分享。
+
+## 入门篇
 [还在用ListView?](http://www.jianshu.com/p/a92955be0a3e)  
 [RecyclerView使用介绍](http://www.jianshu.com/p/12ec590f6c76)  
 [深入浅出RecyclerView](http://kymjs.com/code/2016/07/10/01)  
@@ -10,7 +13,7 @@
 [RecyclerView源码分析](http://mouxuejie.com/blog/2016-03-06/recyclerview-analysis/)  
 [读源码-用设计模式解析RecyclerView](http://www.jianshu.com/p/c82cebc4e798)  
 [Android ListView 与 RecyclerView 对比浅析--缓存机制](https://mp.weixin.qq.com/s?__biz=MzA3NTYzODYzMg==&mid=2653578065&idx=2&sn=25e64a8bb7b5934cf0ce2e49549a80d6&chksm=84b3b156b3c43840061c28869671da915a25cf3be54891f040a3532e1bb17f9d32e244b79e3f&scene=0&key=&ascene=7&uin=&devicetype=android-23&version=26031b31&nettype=WIFI)
-##扩展篇
+## 扩展篇
 [RecyclerView再封装](http://www.jianshu.com/p/a5dd9c0735f2)  
 [封装那些事-RecyclerView封装实践](http://www.jianshu.com/p/a6f158d1a9c9)  
 [RecyclerView学习(一)----初步认知](http://blog.csdn.net/tyk0910/article/details/51329749)  

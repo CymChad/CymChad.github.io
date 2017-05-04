@@ -1,7 +1,7 @@
 # RecyclerView优秀文集
 > 收集RecyclerView优秀文章，持续更新欢迎提交pr，推荐star。
-
-##关注（微信公众号：码个蛋），每天更新优质文章：Android、职场干货，不定期大神语音分享。
+ 
+## 关注（微信公众号：码个蛋），每天更新优质文章：Android、职场干货，不定期大神语音分享。
 
 ## 入门篇
 [还在用ListView?](http://www.jianshu.com/p/a92955be0a3e)  

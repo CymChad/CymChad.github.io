@@ -1,169 +1,199 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="content-type" content="text/html charset=utf-8"/>
-    <meta name="keywords" content="RecyclerView, Adapter, 简单, 高效">
-    <meta name="description" content="优化Adapter代码, 添加Item事件,添加列表加载动画,添加头部、尾部,上拉加载,添加分组,自定义不同的item类型,设置空布局,添加拖拽、滑动删除,分组的伸缩栏">
-    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
-    <link href='//cdn.webfont.youziku.com/webfonts/nomal/90153/46865/57c0fbdff629d818382fde7a.css' rel='stylesheet' type='text/css' />
-    <link type="text/css" href="css/index.css" rel="stylesheet"/>
-    <title>BRVAH</title>
-    <meta name="description" content="A useful adapter helper for Android app development"/>
-    <script src="./js/jquery.min.js"></script>
-    <script type="text/javascript" language="javascript" src="js/jquery.i18n.properties.min.js"></script>
-    <script src="js/index.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="//cdn.bootcss.com/angular.js/1.6.1/angular.min.js"></script>
+  <script src="//cdn.bootcss.com/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="favicon.ico">
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_qoqe9u46tl9dx6r.css">
+  <link rel="stylesheet" href="style.css">
+  <title>BRAVH</title>
 </head>
+<body ng-app="BRAVH" ng-controller="mainController">
+<div ng-if="supported" ng-class="{en : languageIndex, cn: !languageIndex}">
+  <div class="section-banner">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="circle-btn" ng-click="isNavCollapsed = !isNavCollapsed">
+            <i class="iconfont" ng-class="{'icon-menu': isNavCollapsed, 'icon-close': !isNavCollapsed}"></i>
+          </div>
+          <div class="navbar-brand">
+            <img src="http://ots3ywur8.bkt.clouddn.com/img/logo.png" alt="">
+            <img src="http://ots3ywur8.bkt.clouddn.com/img/logo-text.png" alt="">
+          </div>
+          <button class="btn phone-change-language" ng-click="changeLanguage()">
+            {{languages[(languageIndex + 1)%2].title}}
+          </button>
+        </div>
+        <div class="navbar-collapse" uib-collapse="isNavCollapsed">
+          <ul class="nav navbar-nav" ng-click="isNavCollapsed = true">
+            <li ng-repeat="item in navbarItems">
+              <a href ng-click="scrollToElem(item.query)" translate={{item.translate}}></a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-right navbar-collapse collapse">
+          <a href class="change-language" ng-click="changeLanguage()">
+            {{languages[(languageIndex + 1)%2].title}}
+          </a>
+          <a class="iconfont icon-github" href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper"></a>
+        </div>
+      </div>
+    </nav>
+    <div class="container banner">
+      <div class="content">
+        <div>
+          <span>RecyclerView</span>
+          <span>从未如此简单</span>
+        </div>
+        <div>
+          <span>Change numerous for brief</span>
+          <span>RecyclerView has never been so easy</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<body>
-    <!--[if lt IE 10]>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('body').empty();
-            alert('IE 10- is not supported, please upgrade or change your browser.');
-        })
-    </script>
-    <![endif]-->
-    <header>
-        <div class="content">
-            <a class="header-logo" target="_blank" href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper">
-                <img src="./pic/logo.png" id="logoIcon">
-                <img src="./pic/brvah.png" id="brvahText">
-            </a>
-            <a target="_blank" href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper"><img src="./pic/github.png" id="githubLogo"/></a>
-            <div id="changeLanguage">
-                <span id="currentLang"></span>
-                <i class="triangle"></i>
-                <ul class="downlist" id="languageList">
-                </ul>
-            </div>
-            <ul class="tab">
-                <li class="active"><a id="index" href="#">Home</a></li>
-                <li><a id="introduce" href="#section2">Introduce</a></li>
-                <li><a id="usage" target="_blank" href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper/wiki" target="_blank">Usage</a></li>
-                <li><a id="member" target="_blank" href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper/wiki/%E5%85%B3%E4%BA%8E%E5%BC%80%E5%8F%91%E8%80%85" target="_blank">Member</a></li>
-                <li><a id="about" href="#section5">About</a></li>
-            </ul>
+  <div class="section-1" id="section1">
+    <div class="container">
+      <div class="title">RecyclerView</div>
+      <div translate="recommend" class="brief"></div>
+    </div>
+  </div>
 
-        </div>
-    </header>
-    <section class="section-1">
-        <!-- <img src="./pic/section1-bg.png"> -->
-        <div class="content">
-            <div class="title">
-                <p class="gradient" id="section1_p0">化繁为简<br/>RECYCLERVIEW从未如此简单</p>
-                <p id="section1_p1">CHANGE NUMEROUS FOR BRIEF, RECYCLERVIEW HAS NEVER BEEN SO EASY</p>
+  <div class="container section-2" id="section2">
+    <div class="title" translate="section-2-title"></div>
+    <p translate="section-2-brief"></p>
+    <ul>
+      <li ng-repeat="item in functionIcons">
+        <a href={{item.link}}>
+          <img ng-src={{'http://ots3ywur8.bkt.clouddn.com/'+item.pic}} alt="">
+          <span translate={{'section-2-item-'+$index}}></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="section-3" id="section3">
+    <div class="container">
+      <div class="title">
+        <span>BRVAH</span>
+        <span>&nbsp;HAPPY&nbsp;</span>
+        <span>1ST BIRTHDAY!</span>
+      </div>
+      <img class="monkey" src="http://ots3ywur8.bkt.clouddn.com/img/birthdaymonkey.png" alt="">
+      <div class="content">
+        <div class="part1">
+          <p class="subtitle" translate="section-3-subtitle-1"></p>
+          <div class="commit">
+            <div class="left">
+              <div>
+                <i class="iconfont icon-tag"></i>
+                <span class="version">V1.0</span>
+              </div>
+              <div>
+                <i class="iconfont icon-commit"></i>
+                <span class="hash">9dd98b2</span>
+              </div>
             </div>
-            <div class="subtitle">
-                <p class="gradient" id="section1_p2">突破象征着一个可以被克服（战胜）的高度</p>
-                <p id="section1_p3"><span>B</span>REAKTHROUGH <span>R</span>EPRESENTS <span>A</span> <span>V</span>INCIBLE <span>H</span>EIGHT</p>
-            </div>
-            <div class="part">
-                <p id="section1_p4">Powerful and flexible RecyclerAdapter</p>
-                <p id="section1_p5"><a target="_blank" href="http://www.recyclerview.org">www.recyclerview.org</a></p>
-            </div>
-        </div>
-    </section>
-    <section class="section-2" id="section2">
-        <div class="top-layer"></div>
-        <div class="content">
-            <div class="section-title" id="section2Title">Welcome To BRVAH</div>
-            <div class="row">
-                <div class="introduce">
-                    <div class="title">
-                        <div id="introductionTitle">PROJECT INTRODUCE</div>
-                        <div id="introductionTitleCN">/ 介绍项目</div>
-                    </div>
-                    <p id="introductionSubtitle">Base RecyclerView Adapter Helper</p>
-                    <div class="introduction-content">
-                        <p id="introduction_p1">RecyclerView， as one of the most commonly used Android controls, BRVAH's  benefit groups is almost all Android developers, I hope more developers can come together to do this project better and help more people</p>
-                        <p id="introduction_p2">use the RecyclerView to deal with the common needs of the project Adapter efficiently.</p>
-                    </div>
-                    <a class="md-button" id="buttonUsage" target="_blank" href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper/wiki">User Guide</a>
+            <div class="right">
+              <div class="tag">V1.0</div>
+              <div class="commit-message">
+                <img src="http://ots3ywur8.bkt.clouddn.com/img/small_monkey.png" alt="">
+                <div>
+                  <span>CymChad tagged this on 10 Apr 2016.7.11 commits to master since this tag create README.md</span>
                 </div>
-                <div class="what-can-do">
-                    <img src="./pic/brvah_transparent.png" alt="logo" id="transparentLogo"/>
-                    <div class="title">
-                        <p id="whatCanDo">它能做什么</p>
-                        <p id="subtitleWhatCanDo">What can it do</p>
-                    </div>
-                    <a class="more" id="more" target="_blank" href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper/wiki" target="_blank">MORE</a>
-                    <div class="functions">
-                        <div class="grid-row">
-                            <a class="cell" id="doGrid0" target="_blank" href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper/wiki/Optimization-adapter-to-reduce-code">Optimization code</a>
-                            <a class="cell" id="doGrid1" target="_blank" href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper/wiki/Add-OnItemClickLister">Item click event</a>
-                            <a class="cell" id="doGrid2" target="_blank" href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper/wiki/Add-adaptar-animation">Adaptar animation</a>
-                        </div>
-                        <div class="grid-row">
-                            <a class="cell" id="doGrid3" target="_blank" href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper/wiki/Add-footview-and-headview">Header and Footer</a>
-                            <a class="cell" id="doGrid4" target="_blank" href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper/wiki/Pull-up-to-loadMore">Load more</a>
-                            <a class="cell" id="doGrid5" target="_blank" href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper/wiki/Add-group">Expandable Item</a>
-                        </div>
-                        <div class="grid-row">
-                            <a class="cell" id="doGrid6" target="_blank" href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper/wiki/Use-it-custom-item-view-type">Custom view type</a>
-                            <a class="cell" id="doGrid7" target="_blank" href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper/wiki/Use-it-setEmptyView">EmptyView</a>
-                            <a class="cell" id="doGrid8" target="_blank" href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper/wiki/Use-it-drag-and-swipe-item">Drag and Swipe item</a>
-                        </div>
-                    </div>
-                </div>
+              </div>
+              <div class="links">
+                <a href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper">Downloads</a>
+                <a href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper">Source code (zip)</a>
+                <a href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper">Source code (tar.gz)</a>
+              </div>
             </div>
-            <div class="honor row-three">
-                <a class="honor-develop" target="_blank" href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper">
-                    <img src="./pic/development.png"/>
-                    <div id="devTime">Development cycle is only used for 4 months, submitted to the 360 code.</div>
-                    <div id="devIssue">Release 55 versions to solve 200+ problems.</div>
-                </a>
-                <a class="honor-star" target="_blank" href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper">
-                    <img src="./pic/star.png"/>
-                    <div id="githubRate">3000 RecyclerView related projects in the star ranking to fourth.</div>
-                    <div id="githubStars">At present, the number of star is 3456+</div>
-                </a>
-                <a class="honor-member" target="_blank" href="https://github.com/CymChad/BaseRecyclerViewAdapterHelper">
-                    <img src="./pic/share-transparent.png"/>
-                    <div id="memberCount">BRVAH user group: 400+ people<br/>Development group: 7 people <br/>Share group: 14 people</div>
-                    <div id="shareCount">Select 20 links and 30 original articles per month.</div>
-                </a>
+          </div>
+        </div>
+        <div class="part2">
+          <p class="subtitle" translate="section-3-subtitle-2"></p>
+          <ul class="git-status">
+            <li ng-repeat="item in gitStatus">
+              <span class={{getIconClass(item.icon)}}></span>
+              <span class="text">{{item.text}}</span>
+              <span class="number">{{item.number}}</span>
+            </li>
+          </ul>
+        </div>
+        <div class="summery">
+          <img src="http://ots3ywur8.bkt.clouddn.com/img/model.png" alt="">
+          <p translate="section-3-summery"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-4" id="section4">
+    <div class="container">
+      <div class="title" translate="section-4-title"></div>
+      <p class="brief" translate="section-4-brief"></p>
+      <ul class="members">
+        <li ng-repeat="item in members">
+          <a href={{item.link}}>
+            <img ng-src={{'http://ots3ywur8.bkt.clouddn.com/'+item.avatar}} alt="">
+            <span>{{item.name}}</span>
+          </a>
+        </li>
+        <li>
+          <div>
+            <div class="adaptive-circle">
+              <div class="circle-content">
+                <p translate="section-4-welcome"></p>
+              </div>
             </div>
-        </div>
-    </section>
-    <section class="section-4">
-        <div class="content">
-            <div class="section-title" id="aboutBRVAH">About BRVAH</div>
-        </div>
-        <div id="contentAbout">
-            <div class="center">
-                <div class="circle">
-                    BRVAH
-                </div>
-                <div class="text" id="aboutBRVAHText1">Version 2.0 has been released after four months of revising the code and upgrading of version 1.0<br/>Welcome to join in to achieve ourselves and help others<br/>to find the system bugs, to provide better ideas.</div>
-                <div class="text" id="aboutBRVAHText2">Breakthrough Represents A Vincible Height<br/>突破象征着一个可以被克服（战胜）的高度</div>
-            </div>
-        </div>
-    </section>
-    <section class="section-5" id="section5">
-        <div class="content">
-            <div class="section-title" id="joinBRVAH">Join BRVAH</div>
-            <div class="text" id="joinText1">BRVAH is a group of serious, efficient code monkey. BRVAH group's positioning is high quality learning group, now we are formed the atmosphere of mutual help very positive<br/>user group  (question, learning, feedback), sharing group (sharing links, sharing of original articles), development group (maintenance, upgrade)</div>
-            <div class="text" id="joinText2">Join us in the discussion</div>
-            <div class="text" id="joinText3">Benefits of joining us</div>
-            <div class="row-three">
-                <div class="grid" id="joinGrid1">
-                    <img src="./pic/small-brvah.png" alt="" />
-                    <div class="text" id="section5_1">To learn ,to discuss , to grow together,<br/>to know more friends<br/>Communicate with BRVAH developers in depth about any problems straightforwardly.</div>
-                </div>
-                <div class="grid" id="joinGrid2">
-                    <img src="./pic/small-brvah.png" alt="" />
-                    <div class="text" id="section5_2">Could apply to join in share unit or develop unit<br/><a href="https://github.com/CymChad/BRVAHST">BRVAH Share Group</a><br/>Members are welcomed to contribute, which will be reviewed by team leader, and give out suggestions, <br/>so as to assist author to improve writing skills and share knowledge.</div>
-                </div>
-                <div class="grid" id="joinGrid3">
-                    <img src="./pic/small-brvah.png" alt="" />
-                    <div class="text" id="section5_3">Develop unit-to solve problems, to develop new functions <br/> to reframe existing code,to strength our skills.<br/>Share unit-monthly, more than hundred high quality articles links<br/>20 selected links ,30 original articles.</div>
-                </div>
-            </div>
-            <div class="text" id="joinText4">If you think this project is useful, please star it <a href="https://github.com/CymChad/BRVAHST">on the Github</a>.</div>
-        </div>
-    </section>
-    <footer>
-        <div class="content" id="footer">ALL RIGHTS RESERVED. Licensed under the Apache License, Version 2.0.</div>
-    </footer>
+          </div>
+          <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-qrcode" ng-if="languageIndex === 0">
+    <div class="container">
+      <div class="title">
+        <i class="iconfont icon-quote-left"></i>
+        <p translate="section-qrcode-title"></p>
+        <i class="iconfont icon-quote-right"></i>
+      </div>
+      <div class="content">
+        <p translate="section-qrcode-content-1"></p>
+        <p translate="section-qrcode-content-2"></p>
+      </div>
+      <div class="tags">
+        <a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzIwMzYwMTk1NA==&hid=1&sn=d3df6297facbfe7467b7e0e4fe5d3e25#wechat_redirect" ng-repeat="item in [0, 1, 2, 3, 4]" translate="{{'section-qrcode-tag-'+item}}"></a>
+      </div>
+      <img class="qrcode" src="http://ots3ywur8.bkt.clouddn.com/img/qrcode.png" alt="">
+    </div>
+  </div>
+
+  <div class="section-group" ng-if="languageIndex === 0">
+    <div class="content">
+      <p translate="section-group-content-1"></p>
+      <p translate="section-group-content-2"></p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p translate="footer"></p>
+    </div>
+  </footer>
+</div>
+<div ng-if="!supported">
+  <div translate="not-support" ng-style="{color: 'black'}"></div>
+</div>
 </body>
 </html>

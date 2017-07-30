@@ -5,7 +5,9 @@ body {
   color: white;
   font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-weight: 300; }
-
+.en, .cn {
+  color: white;
+}
 ul {
   list-style: none;
   padding-left: 0; }

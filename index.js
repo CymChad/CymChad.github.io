@@ -2,7 +2,7 @@
  * Created by luoxiongwen on 17/6/1.
  */
 
-var app = angular.module('BRAVH', ['ui.bootstrap', 'pascalprecht.translate', 'ngCookies', 'ngSanitize']);
+var app = angular.module('BRVAH', ['ui.bootstrap', 'pascalprecht.translate', 'ngCookies', 'ngSanitize']);
 app.controller('mainController', function ($scope, $translate, $cookies) {
   $scope.isNavCollapsed = true;
   $scope.isCollapsed = false;
@@ -242,7 +242,7 @@ var translationsEN = {
   'section-3-subtitle-2': 'A year later',
   'section-3-summery': 'This year marks the first anniversary of BRVAH.<br>During this year, BRVAH submited code 714 times, which involve 20 people to participate in.<br>It also solved problems for the users 843 times.<br>BRVAH is awarded a total of 6407 stars, gaining NO.1 ranking.',
   'section-4-title': 'Our team',
-  'section-4-brief': "It was the reverence to code that makes us treat things with earnestness, responsibility and respect.<br>When faced with challenges, it was the zeal to code that makes the spirits of exploring and seeking become the instincts of each member of BRAVH.<br>We communicate with others through projects. Via BRVAH, we're trying to show our perserverance and convey our faith.<br>A good project, of course, can't be achieved without the trust and affection among the team members. The trust and affection among the team members provide the impetus for BRVAH to further efforts.",
+  'section-4-brief': "It was the reverence to code that makes us treat things with earnestness, responsibility and respect.<br>When faced with challenges, it was the zeal to code that makes the spirits of exploring and seeking become the instincts of each member of BRVAH.<br>We communicate with others through projects. Via BRVAH, we're trying to show our perserverance and convey our faith.<br>A good project, of course, can't be achieved without the trust and affection among the team members. The trust and affection among the team members provide the impetus for BRVAH to further efforts.",
   'section-4-welcome': 'Forward<br>to your join',
   'footer': 'All Right reserved licensed under the Apache license Version 3.0.',
   'not-support': 'This browser is not support by our site, please update your browser. Recommend Chrome and Firefox'

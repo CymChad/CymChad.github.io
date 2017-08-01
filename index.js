@@ -194,7 +194,7 @@ app.controller('mainController', function ($scope, $translate, $cookies) {
     {
       avatar: 'img/avatar-8.png',
       name: '上海-AllenCoder',
-      link: 'http://www.devcoder.cn/',
+      link: 'https://github.com/AllenCoder',
     },
     {
       avatar: 'img/avatar-9.png',

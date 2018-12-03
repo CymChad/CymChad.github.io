@@ -34,7 +34,7 @@ a, a:hover, a:focus, a:visited {
 .section-banner {
   width: 100%;
   height: 750px;
-  background: black url("http://ots3ywur8.bkt.clouddn.com/img/banner-bg.png") no-repeat 40% center;
+  background: black url("http://recyclerview.devcoder.cn/img/banner-bg.png") no-repeat 40% center;
   color: white; }
   .section-banner nav {
     background-color: rgba(0, 0, 0, 0.75);
@@ -161,7 +161,7 @@ a, a:hover, a:focus, a:visited {
       display: none; } }
 
 .section-1 {
-  background: #2a1c76 url("http://ots3ywur8.bkt.clouddn.com/img/banner2-bg.png") no-repeat 50% 50%;
+  background: #2a1c76 url("http://recyclerview.devcoder.cn/img/banner2-bg.png") no-repeat 50% 50%;
   height: 630px; }
   .section-1 .container {
     max-width: 800px; }
@@ -437,7 +437,7 @@ a, a:hover, a:focus, a:visited {
       font-size: 14px; } }
 
 .section-qrcode {
-  background: url("http://ots3ywur8.bkt.clouddn.com/img/section-qrcode-bg.png") 70%;
+  background: url("http://recyclerview.devcoder.cn/img/section-qrcode-bg.png") 70%;
   text-align: center;
   padding: 100px 0 85px; }
   .section-qrcode .container {
@@ -500,7 +500,7 @@ a, a:hover, a:focus, a:visited {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("http://ots3ywur8.bkt.clouddn.com/img/group-bg.png") no-repeat 50% 50%;
+  background: url("http://recyclerview.devcoder.cn/img/group-bg.png") no-repeat 50% 50%;
   height: 500px;
   font-size: 16px; }
   .section-group .content {

@@ -49,14 +49,14 @@ app.controller('mainController', function ($scope, $translate, $cookies) {
       query: '#section2',
       translate: 'nav-usage',
     },
-    {
-      query: '#section3',
-      translate: 'nav-aboutUs',
-    },
-    {
-      query: '#section4',
-      translate: 'nav-members',
-    },
+//     {
+//       query: '#section3',
+//       translate: 'nav-aboutUs',
+//     },
+//     {
+//       query: '#section4',
+//       translate: 'nav-members',
+//     },
   ];
 
   $scope.languages = [

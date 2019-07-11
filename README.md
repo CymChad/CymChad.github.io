@@ -24,7 +24,7 @@
 [RecyclerView 实现快速滑动](http://blog.csdn.net/u014099894/article/details/51855129)  
 [RecyclerView 顶部悬浮实现](http://www.jianshu.com/p/c596f2e6f587)  
 [Android 自定义RecyclerView 实现真正的Gallery效果](http://blog.csdn.net/lmj623565791/article/details/38173061/)  
-##[BRVAH](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)  
+## [BRVAH](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)  
 [BRVAH优化篇](http://www.jianshu.com/p/411ab861034f)  
 [BRVAH动画篇](http://www.jianshu.com/p/fa3f97c19263)  
 [BRVAH多布局（上）](http://www.jianshu.com/p/9d75c22f0964)  

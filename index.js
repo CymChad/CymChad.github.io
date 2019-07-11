@@ -282,8 +282,8 @@ var translationsCN = {
   'section-qrcode-tag-2': 'View',
   'section-qrcode-tag-3': '源码分析',
   'section-qrcode-tag-4': '精进之路',
-  'section-group-content-1': '入群要求：说出你的目标',
-  'section-group-content-2': 'QQ群：558178792',
+  'section-group-content-1': '作者微信：chad_cym',
+  'section-group-content-2': '添加清备注：BRVAH',
   'footer': 'All Right reserved licensed under the Apache license Version 3.0.',
   'not-support': '本网站不支持你现在的浏览器，请更换或升级你的浏览器，推荐使用Chrome或Chrome内核的浏览器（如：QQ浏览器、UC浏览器）',
 };
